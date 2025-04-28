@@ -1,13 +1,13 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider, useAuth } from './Contexts/AuthContext';
-import Sidebar from './components/Sidebar';
-import Header from './components/Header';
-import Dashboard from './pages/Dashboard';
-import Menus from './pages/Menus';
-import Orders from './pages/Orders';
-import Analytics from './pages/Analytics';
-import Settings from './pages/Settings';
-import Login from './pages/Login';
+import Sidebar from './Components/Sidebar';
+import Header from './Components/Header';
+import Dashboard from './Pages/Dashboard';
+import Menus from './Pages/Menus';
+import Orders from './Pages/Orders';
+import Analytics from './Pages/Analytics';
+import Settings from './Pages/Settings';
+import Login from './Pages/Login';
 
 function ProtectedRoute({ children }) {
   const { user } = useAuth();
