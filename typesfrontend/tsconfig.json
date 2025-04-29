@@ -1,4 +1,9 @@
 {
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
   "compilerOptions": {
     "target": "es5",
     "lib": [
@@ -20,6 +25,12 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
+  "noImplicitAny": false,
+  "noUnusedParameters": false,
+  "skipLibCheck": true,
+  "allowJs": true,
+  "noUnusedLocals": false,
+  "strictNullChecks": false,
   "include": [
     "src"
   ]
